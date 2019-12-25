@@ -71,7 +71,7 @@
       min-height: 100vh;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       flex-direction: column;
     }
 
@@ -80,7 +80,7 @@
       max-width: 25ch;
       text-align: center;
       font-size: 12vw;
-      margin: 3vw;
+      margin: 10vw 3vw;
       line-height: 1.25;
     }
 
@@ -133,8 +133,13 @@
     }
 
     @media only screen and (min-width: 35em) {
+      
+      body { 
+        justify-content: center;
+      }
 
       h1 {
+        margin: 3vw;
         font-size: 4rem;
       }
 
