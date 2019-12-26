@@ -6,17 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:type" content="article">
 
-<!--
   <title>***</title>
   <meta property="og:title" content="***">
   <meta name="twitter:title" content="***">
--->
 
-<!-- 
   <meta name="description" content="***">
   <meta property="og:description" content="***">
   <meta name="twitter:description" content="***">
- -->
 
  <!-- 
   <meta property="og:image" content="***">
@@ -26,126 +22,252 @@
 
 </head>
 <body>
+ 
+<!-- 👇 👇 👇 PAGE CONTENTS 👇 👇 👇 -->
 
-<!-- 
+  <!-- Headline -->
   <h1>***</h1>
--->
 
-<!--
+  <!-- Share Buttons -->
   <section class="share-buttons">
-
     <a data-tweet="***" href="https://twitter.com/intent/tweet?text=" onclick="shareLink(this);" target="_blank" class="button">
-
       Share on Twitter
-
       <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 612"><path fill="#FFF" d="M257.42 609.34c281.9 0 436.1-233.6 436.1-436.1 0-6.5-.3-13.3-.5-19.8 29.8-21.6 55.9-48.6 76.4-79.4-27.6 12.3-56.9 20.3-88 24.1 31.6-19 55.9-48.9 67.4-84.7-29.6 17.5-62.4 30.3-97.2 37.1-28.1-29.8-67.7-48.4-111.8-48.4-84.6 0-153 68.6-153 153.1 0 12 1.3 23.8 4 34.8-127.3-6.5-240.3-67.4-315.8-160.1-13.3 22.6-20.8 48.9-20.8 76.9 0 53.1 27.1 100 68.2 127.6-25.1-.8-48.9-7.8-69.4-19v2c0 74.2 52.9 136.1 123.1 150.1-12.8 3.5-26.3 5.5-40.3 5.5-9.8 0-19.5-1-28.8-2.8 19.5 60.9 76.2 105.3 143.1 106.5-52.4 41.1-118.5 65.7-190.2 65.7-12.3 0-24.6-.8-36.6-2 67 43.6 147.7 68.9 234.1 68.9"/></svg>
-
     </a>
-
     <a href="https://www.facebook.com/share.php?u=***" onclick="shareLink(this);" target="_blank" class="button">
-
       <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 612"><path fill="#FFF" d="M658.9 10.5H133.1c-17.9 0-32.6 14.7-32.6 32.6v525.8c0 18.1 14.7 32.6 32.6 32.6h283V372.6h-77v-89.2h77v-65.8c0-76.4 46.5-117.9 114.6-117.9 32.6 0 60.8 2.5 68.8 3.4V183h-47.2c-36.9 0-44.3 17.7-44.3 43.3v56.9h88.3l-11.5 89.2H508v228.8h150.6c18.1 0 32.6-14.7 32.6-32.6V43.1c.3-17.9-14.4-32.6-32.3-32.6z"/></svg>
-
       Share on Facebook
-
     </a>
-
   </section>
--->
+
+<!-- ☝️ ☝️ ☝️ PAGE CONTENTS ☝️ ☝️ ☝️ -->
 
   <style>
-    html {
 
-      /* Page background settings */
-      background: #d0e4f7;
-      background-image: linear-gradient(180deg, rgba(204,228,247,1) 11%, rgba(237,246,250,1) 101%);
-      /* End of page background settings */
+/************************************ 
+ *                                  *
+ *      DEFAULT COLOR SCHEME        *
+ *                                  *
+ ************************************/
 
-      font-family: -apple-system, BlinkMacSystemFont,
-        "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans",
-        "Droid Sans", "Helvetica Neue", sans-serif;
-    }
+:root {
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: column;
-    }
+--background-gradient-start: #EDF5FA;
+  --background-gradient-end: #CCE4F7;
 
-    h1 {
-      color: #000;
-      max-width: 25ch;
-      text-align: center;
-      font-size: 12vw;
-      margin: 10vw 3vw;
-      line-height: 1.25;
-    }
+           --headline-color: #000000;
 
-    .share-buttons {
-      margin: 7vh 0 0;
-      display: flex;
-    }
+       --share-button-color: #000000;
+ --share-button-hover-color: #0000FF;
 
-    .button {
-      display: flex;
-      flex: 1 1 50%;
-      text-align: right;
-      align-items: center;
-      color: #000;
-      text-decoration: none;
-      transition: color 0.2s;
-      font-weight: 600;
-    }
+           --highlight-text: #FFFFFF;
+     --highlight-background: #000000;
 
-    .button:hover,
-    .button:active {
-      color: #00F;
-      transition: color 0.2s;
-    }
+}
 
-    .button + .button {
-      text-align: left;
-      margin-left: 1rem;
-    }
 
-    .social-icon {
-      flex: 1 0 40%;
-      margin: 0 0.5rem;
-    }
+/************************************
+ ************************************
+ ****** DARK-MODE COLOR SCHEME ******
+ ************************************
+ ************************************/
 
-    .social-icon path {
-      fill: #000;
-      transition: fill 0.2s;
-    }
+@media (prefers-color-scheme: dark) {
 
-    .button:hover .social-icon path,
-    .button:active .social-icon path {
-      fill: #00F;
-      transition: fill 0.2s;
-    }
+:root {
 
-    ::selection {
-      background: #fcdd00;
-      text-shadow: none;
-    }
+--background-gradient-start: #121923;
+  --background-gradient-end: #0B0A07;
 
-    @media only screen and (min-width: 35em) {
-      
-      body { 
-        justify-content: center;
-      }
+           --headline-color: #FFFFFF;
 
-      h1 {
-        margin: 3vw;
-        font-size: 4rem;
-      }
+       --share-button-color: #FFFFFF;
+ --share-button-hover-color: #0099FF;
 
-    }
+           --highlight-text: #000000;
+     --highlight-background: #FFFFFF;
+
+  }
+
+}
+
+html {
+  background: var(--background-gradient-end, #CCE4F7);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #CCE4F7), to(#EDF5FA));
+  background-image: -o-linear-gradient(top, #CCE4F7 10%, #EDF5FA 100%);
+  background-image: linear-gradient(to bottom, #CCE4F7 10%, #EDF5FA 100%);
+    
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, var(--background-gradient-end, #CCE4F7)), to(var(--background-gradient-start, #EDF5FA)));
+  background-image: -o-linear-gradient(bottom, var(--background-gradient-end, #CCE4F7) 10%, var(--background-gradient-start, #EDF5FA) 100%);
+  background-image: linear-gradient(to top, var(--background-gradient-end, #CCE4F7) 10%, var(--background-gradient-start, #EDF5FA) 100%);
+
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+
+  -webkit-box-pack: start;
+     -ms-flex-pack: start;
+   justify-content: flex-start;
+
+  -webkit-box-direction: normal;
+     -webkit-box-orient: vertical;
+     -ms-flex-direction: column;
+         flex-direction: column;
+
+  margin: 0;
+}
+
+h1 {
+  color: #000;
+  color: var(--headline-color, #000);
+
+  max-width: 25ch;
+  text-align: center;
+  font-size: 8vw;
+  margin: 15vw 8vw 5vw;
+  line-height: 1.25;
+}
+
+.share-buttons {
+  margin: 5vh 0 15vh;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  font-size: 0.8rem;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-flex: 1;
+          -ms-flex: 1 1 50%;
+              flex: 1 1 50%;
+
+  text-align: right;
+
+   -webkit-box-align: center;
+      -ms-flex-align: center;
+         align-items: center;
+
+  color: #000;
+  color: var(--share-button-color, #000);
+
+  text-decoration: none;
+
+  -webkit-transition: color 0.2s;
+       -o-transition: color 0.2s;
+          transition: color 0.2s;
+
+  font-weight: 600;
+}
+
+.button:hover,
+.button:active {
+  color: #00F;
+  color: var(--share-button-hover-color, #00F);
+
+  -webkit-transition: color 0.2s;
+       -o-transition: color 0.2s;
+          transition: color 0.2s;
+}
+
+.button + .button {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.social-icon {
+  -webkit-box-flex: 1;
+          -ms-flex: 1 0 40%;
+              flex: 1 0 40%;
+
+  margin: 0 0.5rem;
+}
+
+.social-icon path {
+  fill: #000;
+  fill: var(--share-button-color, #000);
+
+  -webkit-transition: fill 0.2s;
+       -o-transition: fill 0.2s;
+          transition: fill 0.2s;
+}
+
+.button:hover .social-icon path,
+.button:active .social-icon path {
+  fill: #00F;
+  fill: var(--share-button-hover-color, #00F);
+
+  -webkit-transition: fill 0.2s;
+       -o-transition: fill 0.2s;
+          transition: fill 0.2s;
+}
+
+::-moz-selection {
+  background: #000;
+  background: var(--highlight-background, #000);
+
+  color: #FFF;
+  color: var(--highlight-text, #FFF);
+  
+  text-shadow: none;
+}
+
+::selection {
+  background: #000;
+  background: var(--highlight-background, #000);
+
+  color: #FFF;
+  color: var(--highlight-text, #FFF);
+
+  text-shadow: none;
+}
+
+@media only screen and (min-width: 35em) {
+  
+  body { 
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+      justify-content: center;
+
+    min-height: 100vh;
+  }
+
+  h1 {
+    margin: 3vw;
+    font-size: 4rem;
+  }
+
+  .share-buttons {
+    font-size: 1rem;
+  }
+
+}
+
   </style>
   <script>
+
     // Get all the share buttons
     var buttons = document.getElementsByClassName('button')
     // For each of them...
@@ -158,12 +280,14 @@
         button.href = button.href + encodeURIComponent(button.getAttribute('data-tweet'))
       }
     }
+
     function shareLink(link) {
       // Open a new window that's sized for the share dialog
       window.open(link.href, 'share','left=20,top=20,width=550,height=250,toolbar=1,resizable=0');
       // Return false so the normal link behavior doesn't run
       return false;
     }
+
   </script>
 </body>
 </html>
