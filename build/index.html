@@ -6,16 +6,16 @@
 
     <!-- 🎨 META TAGS & DESIGN -->
 
-    <title>***</title>
-    <meta property="og:title" content="***">
-    <meta name="twitter:title" content="***">
+    <title>My New Site</title>
+    <meta property="og:title" content="My New Site">
+    <meta name="twitter:title" content="My New Site">
 
-    <meta name="description" content="***">
-    <meta property="og:description" content="***">
-    <meta name="twitter:description" content="***">
+    <meta name="description" content="This text will show up in search results and under the share preview.">
+    <meta property="twitter:description" content="This text will show up in search results and under the share preview. This text is specific to twitter">
+    <meta property="og:description" content="This text will show up in search results and under the share preview. This text is specific to Facebook.">
 
     <!--
-    <meta property="og:image" content="***">
+    <meta property="og:image" content="This text will show up in search results and under the share preview.">
     <meta name="twitter:image" content="***">
     <meta name="twitter:card" content="summary_large_image">
     -->
@@ -24,34 +24,34 @@
 
       /* Page background */
       html {
-        background-color: white;
+        background-color: #0B0014;
       }
 
       /* Headline color */
       h1 {
-        color: black;
+        color: #F5E9E2;
       }
 
       /* Share link text color */
       .button {
-        color: black;
+        color: #D44D5C;
       }
 
       /* Share link text hover color */
       .button:hover,
       .button:active {
-        color: blue;
+        color: #E3B5A4;
       }
 
       /* Share icon color */
       .social-icon path { 
-        fill: black;
+        fill: #D44D5C;
       }
 
       /* Share icon hover color */
       .button:hover .social-icon path,
       .button:active .social-icon path {
-        fill: blue;
+        fill: #E3B5A4;
       }
 
     </style>
@@ -64,15 +64,15 @@
     <!-- ✏️ CONTENT -->
 
     <!-- Headline -->
-    <h1>***</h1>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 
     <!-- Share Buttons -->
     <section class="share-buttons">
-      <a data-tweet="***" href="https://twitter.com/intent/tweet?text=" onclick="shareLink(this);" target="_blank" class="button">
+      <a data-tweet="That's it. That's the tweet." href="https://twitter.com/intent/tweet?text=" onclick="shareLink(this);" target="_blank" class="button">
         Share on Twitter
         <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 612"><path fill="#000" d="M257.42 609.34c281.9 0 436.1-233.6 436.1-436.1 0-6.5-.3-13.3-.5-19.8 29.8-21.6 55.9-48.6 76.4-79.4-27.6 12.3-56.9 20.3-88 24.1 31.6-19 55.9-48.9 67.4-84.7-29.6 17.5-62.4 30.3-97.2 37.1-28.1-29.8-67.7-48.4-111.8-48.4-84.6 0-153 68.6-153 153.1 0 12 1.3 23.8 4 34.8-127.3-6.5-240.3-67.4-315.8-160.1-13.3 22.6-20.8 48.9-20.8 76.9 0 53.1 27.1 100 68.2 127.6-25.1-.8-48.9-7.8-69.4-19v2c0 74.2 52.9 136.1 123.1 150.1-12.8 3.5-26.3 5.5-40.3 5.5-9.8 0-19.5-1-28.8-2.8 19.5 60.9 76.2 105.3 143.1 106.5-52.4 41.1-118.5 65.7-190.2 65.7-12.3 0-24.6-.8-36.6-2 67 43.6 147.7 68.9 234.1 68.9"/></svg>
       </a>
-      <a href="https://www.facebook.com/share.php?u=***" onclick="shareLink(this);" target="_blank" class="button">
+      <a href="https://www.facebook.com/share.php?u=https://example.com" onclick="shareLink(this);" target="_blank" class="button">
         <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 612"><path fill="#000" d="M658.9 10.5H133.1c-17.9 0-32.6 14.7-32.6 32.6v525.8c0 18.1 14.7 32.6 32.6 32.6h283V372.6h-77v-89.2h77v-65.8c0-76.4 46.5-117.9 114.6-117.9 32.6 0 60.8 2.5 68.8 3.4V183h-47.2c-36.9 0-44.3 17.7-44.3 43.3v56.9h88.3l-11.5 89.2H508v228.8h150.6c18.1 0 32.6-14.7 32.6-32.6V43.1c.3-17.9-14.4-32.6-32.3-32.6z"/></svg>
         Share on Facebook
       </a>
