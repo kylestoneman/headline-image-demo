@@ -22,9 +22,15 @@
 
     <style>
 
-      /* Page background */
       html {
-        background-color: #0B0014;
+        background-color: black;
+        background-image: url("/background.jpg");
+      }
+      
+      @media screen and (min-resolution: 140dpi) {
+        html {
+          background-image: url("background@2x.jpg");
+        }
       }
 
       /* Headline color */
